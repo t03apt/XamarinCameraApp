@@ -1,12 +1,7 @@
-﻿using System;
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using Plugin.Permissions;
-using Plugin.Permissions.Abstractions;
 
 
 namespace XamarinCameraApp.Droid
@@ -16,8 +11,6 @@ namespace XamarinCameraApp.Droid
     {
         protected override void OnCreate(Bundle bundle)
         {
-            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
-
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
